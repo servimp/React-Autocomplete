@@ -1,7 +1,7 @@
 ### Questions
 1. What is the difference between Component and PureComponent? give an example where it might break my app.
    
-   The difference is mainly in the methods for updating the components. A React component is rendered by default whenever receives new props or state. A pureComponent does a comparison with the actual props and state, if there are changes it renders again. A pure component might fail in the case that a prop is a complex data type with parameters that could change without changing the the reference to the object, so a change to the object could pass undetected.
+   The difference is mainly in the methods for updating the components. A React component is rendered by default whenever receives new props or state. A pureComponent does a comparison with the actual props and state, if there are changes it renders again. A pure component might fail in the case that a prop is a complex data type with parameters that could change without changing the reference to the object, so a change to the object could pass undetected.
 
 2. Context + ShouldComponentUpdate might be dangerous. Can think of why is that?
    
@@ -33,7 +33,8 @@
    When using callbacks, we are basically handling errors in a more traditional way for JS, where the first argument represents an error. With Promises the catch method is used, and when a promise is rejected the error is available for the next error handler. Async await uses a try and catch block approach.
 
 8. How many arguments does setState take and why is it async.
-   R. It takes two arguments, one for the actual state and the other other argument is a callback function that takes place when the update is applied. It is Async so that React can decide when to update the state and optimize performance.
+   
+   It takes two arguments, one for the actual state and the other other argument is a callback function that takes place when the update is applied. It is Async so that React can decide when to update the state and optimize performance.
 
 9. List the steps needed to migrate a Class to Function Component.
    
