@@ -46,4 +46,4 @@
 
 11. How to render an HTML string coming from the server.
     
-    It could be implemented using Vanilla JS and adding the string or data as a prop in an already defined component.
+    It could be implemented using a react prop "dangerouslySetInnerHTML". The HTML that will be passed should be verified so that it does not contain any malicious code.
